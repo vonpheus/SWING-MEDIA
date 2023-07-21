@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Webpage</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(225deg, #0a1d23, #000);
+      transform: scale(0.85); /* Scale down the whole webpage by 15% */
+      transform-origin: top center; /* Maintain the top left as the origin point */
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-weight: normal;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      font-size: 41px; /* Adjust the font size accordingly */
+      text-transform: uppercase;
+      letter-spacing: 6.8px; /* Adjust the letter spacing accordingly */
+      display: flex;
+      align-items: center;
+    }
+
+    h1 .logo {
+      width: 42.5px; /* Adjust the width accordingly */
+      height: 42.5px; /* Adjust the height accordingly */
+      margin-right: 7px; /* Adjust the margin accordingly */
+      box-shadow: none; /* Remove the box shadow */
+    }
+
+    h2 {
+      font-weight: normal;
+      color: #fff;
+      font-size: 20.4px; /* Adjust the font size accordingly */
+      text-transform: uppercase;
+      letter-spacing: 3.4px; /* Adjust the letter spacing accordingly */
+    }  
+
+    h3 {
+      font-weight: bold;
+      color: #000; /* Black text color */
+      font-size: 20.4px; /* Adjust the font size accordingly */
+      text-transform: uppercase;
+      letter-spacing: 3.4px; /* Adjust the letter spacing accordingly */
+      background-color: #1afe7d; /* Neon green background */
+      padding: 7px; /* Adjust the padding accordingly */
+      display: inline;
+    }
+
+    .subheader {
+      text-align: center;
+      color: #1afe7d; /* Neon blue */
+      text-shadow: 0 0 5px #1afe7d; /* Neon blue shadow */
+      font-size: 17px; /* Adjust the font size accordingly */
+      padding: 7px; /* Adjust the padding accordingly */
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px; /* Adjust the letter spacing accordingly */
+    }
+    .Arrows {
+      display: block;
+      position: absolute;
+      bottom: 34%;
+      left: 100%;
+      transform: translateX(-50%);
+      max-width: 127.5px; /* Adjust the max width accordingly */
+      height: auto;
+      box-shadow: none;
+      z-index: 1;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 17px; /* Adjust the padding accordingly */
+      align-items: stretch; /* Ensure equal height */
+    }
+
+    .column {
+      flex: 1;
+      padding: 7px; /* Adjust the padding accordingly */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; /* Distribute items evenly */
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 600px; /* Adjust the max height accordingly */
+      height: auto;
+      border-radius: 6.8px; /* Adjust the border radius accordingly */
+      box-shadow: 4px 0px 0 0 #1afe7d; /* Adjust the box shadow accordingly */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .bar {
+      position: bottom;
+      height: 3.4px; /* Adjust the height accordingly */
+      background-color: #1afe7d;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .bar.top {
+      top: 0;
+      bottom: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>SWAP <img class="logo" src="SWAP_images/Swap Media Logo.png" alt="Logo"> Media</h1>
+    <p style="text-transform: none; font-weight: bold; font-family: 'Roboto', sans-serif;">
+      <span style="color: #1afe7d;">SW</span>ing states <span style="color: #1afe7d;">A</span>rtificial intelligent driven message
+      <span style="color: #1afe7d;">P</span>enetration</p>
+    <h2>And Mountain Moving Systems presents</h2>
+    <h3>A Unicorn Media Platform To Control Outcomes NEVER SEEN in History</h3>
+  </div>
+
+  <div class="subheader">
+    <p>King Making | Rain Making | Sector Taking | Behavior Staking</p>
+  </div>
+
+  <div class="content">
+    <div class="column">
+      <img src="SWAP_images/Techno/Tech room2.png" alt="High technological image">
+      <img class="Arrows" src="SWAP_images/arrows.png" alt="Small Image 1">
+    </div>
+    <div class="column">
+      <img src="SWAP_images/Crowd/Crowd1.png" alt="People looking at phone screens">
+      <img class="Arrows" src="SWAP_images/arrows.png" alt="Small Image 2">
+    </div>
+    <div class="column">
+      <img src="SWAP_images/Mountain/mount move 2.gif" alt="GIF" style="width: 95%; height: auto;">
+    </div>
+  </div>
+  
+  <div class="bar"></div>
+  <div class="bar top"></div>
+</body>
+</html>

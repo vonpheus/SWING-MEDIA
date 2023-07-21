@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Webpage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <video id="video-bg" autoplay loop muted>
+    <source src="SWAP_Videos/BG.mp4" type="video/mp4">
+  </video>
+
+  <div class="header">
+    <h1 style="margin-bottom: -10px; border-bottom: 1px solid">SWING <img class="logo" src="SWAP_images/Swap Media Logo.png" alt="Logo"> Media</h1>
+    <h2 style="font-weight: bold;">And Mountain Moving Systems presents</h2>
+    <h3>A Unicorn Media Platform To Control Outcomes <span class="enlarged-text">NEVER SEEN</span> in History</h3>
+  </div>
+  
+  <div class="subheader">
+    <p>King Making | Rain Making | Sector Taking | Behavior Staking</p>
+  </div>
+
+  <div class="content">
+    <div class="column">
+      <img src="SWAP_images/Techno/Tech room2.png" alt="High technological image">
+      <img id="arrow-img" class="Arrows" src="SWAP_images/arrows.png" alt="Arrow">
+      <img src="SWAP_images/Crowd/Crowd2.png" alt="People looking at phone screens">
+    </div>
+  </div>
+
+  <div class="bar"></div>
+  <div class="bar top"></div>
+
+<!-- Three columns of images -->
+<div class="three-columns">
+  <div class="column">
+    <div class="images-container"></div>
+    <img src="SWAP_images/voting/348369105160351710.png" alt="Image 1">
+  </div>
+  <div class="column">
+    <img src="SWAP_images/shoppers/X11.png" alt="Image 2">
+  </div>
+  <div class="column">
+    <img src="SWAP_images/Car lot/Car lot.jpg" alt="Image 3">
+  </div>
+</div>
+  
+  <div class="scaling-control">
+    <label for="h1-scale-range">H1 Scale Factor:</label>
+    <input id="h1-scale-range" type="range" min="0.5" max="2" step="0.1" value="1" onchange="updateScale('h1', this.value)">
+    <span class="scale-value" id="h1-scale-value">0.7</span>
+  </div>
+  
+  <div class="scaling-control">
+    <label for="h2-scale-range">H2 Scale Factor:</label>
+    <input id="h2-scale-range" type="range" min="0.5" max="2" step="0.1" value="1" onchange="updateScale('h2', this.value)">
+    <span class="scale-value" id="h2-scale-value">0.7</span>
+  </div>
+  
+  <div class="scaling-control">
+    <label for="h3-scale-range">H3 Scale Factor:</label>
+    <input id="h3-scale-range" type="range" min="0.5" max="2" step="0.1" value="1" onchange="updateScale('h3', this.value)">
+    <span class="scale-value" id="h3-scale-value">0.7</span>
+  </div>
+  
+  <div class="scaling-control">
+    <label for="subheader-scale-range">Subheader Scale Factor:</label>
+    <input id="subheader-scale-range" type="range" min="0.5" max="2" step="0.1" value="1" onchange="updateScale('subheader', this.value)">
+    <span class="scale-value" id="subheader-scale-value">0.7</span>
+  </div>
+  
+  <div class="scaling-control">
+    <label for="columns-scale-range">Columns Scale Factor:</label>
+    <input id="columns-scale-range" type="range" min="0.5" max="2" step="0.1" value="1" onchange="updateScale('columns', this.value)">
+    <span class="scale-value" id="columns-scale-value">0.6</span>
+  </div>
+  
+  <script>
+    function updateScale(elementId, value) {
+      document.documentElement.style.setProperty('--' + elementId + '-scale-factor', value);
+      document.getElementById(elementId + '-scale-value').textContent = value;
+    }
+  </script>
+</body>
+</html>
