@@ -3,6 +3,8 @@
 <head>
   <title>Tech Webpage</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add the viewport meta tag -->
 </head>
 <body>
   <video id="video-bg" autoplay loop muted>
@@ -19,27 +21,26 @@
     <p>King Making | Rain Making | Sector Taking | Behavior Staking</p>
   </div>
 
+  <div class="subheader-smaller">
+    <p>King Making | Rain Making |<br> Sector Taking | Behavior Staking</p>
+  </div>
+
   <div class="content">
     <div class="column">
-      <img src="SWAP_images/Techno/tech room2.png" alt="High technological image">
+      <img class="ImageA" src="SWAP_images/Techno/Tech room2.png" alt="High technological image">
       <img id="arrow-img" class="Arrows" src="SWAP_images/arrows.png" alt="Arrow">
-      <img src="SWAP_images/Crowd/Crowd2.png" alt="People looking at phone screens">
+      <img class="ImageA"src="SWAP_images/Crowd/Crowd2.png" alt="People looking at phone screens">
     </div>
   </div>
 
-  <div class="bar"></div>
-  <div class="bar top"></div>
+<div class="bar"></div>
+
 
 <!-- Three columns of images -->
 <div class="three-columns">
-  <div class="column">
     <div class="images-container"></div>
     <img src="SWAP_images/voting/348369105160351710.png" alt="Image 1">
-  </div>
-  <div class="column">
     <img src="SWAP_images/shoppers/X11.png" alt="Image 2">
-  </div>
-  <div class="column">
     <img src="SWAP_images/Car lot/Car lot.jpg" alt="Image 3">
   </div>
 </div>
@@ -80,5 +81,7 @@
       document.getElementById(elementId + '-scale-value').textContent = value;
     }
   </script>
+
+  
 </body>
 </html>
